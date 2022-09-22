@@ -53,5 +53,17 @@ int main(){
     std::cout << "Lower Triangle 1:\n";
     std::cout << l_triangle(1);
 
+    std::cout << "Upper Triangle 6:\n";
+    std::cout << u_triangle(6);
+
+    std::cout << "Upper Triangle 8:\n";
+    std::cout << u_triangle(8);
+    
+    std::cout << "Upper Triangle 2:\n";
+    std::cout << u_triangle(2);
+
+    std::cout << "Upper Triangle 1:\n";
+    std::cout << u_triangle(1);
+
     return 0;
 }

@@ -1,7 +1,8 @@
 #include <iostream>
 #include <string>
 
-std::string box(int width, int height){
+std::string box(int width, int height)
+{
     std::string return_string = "";
     for(int y = 0; y < height; y++){
         for(int x = 0; x < width;x++){
@@ -12,7 +13,8 @@ std::string box(int width, int height){
     return return_string;
 }
 
-std::string checkerboard(int width, int height){
+std::string checkerboard(int width, int height)
+{
     std::string return_string = "";
 
     for (int y = 0; y < height; y++)
@@ -46,7 +48,8 @@ std::string checkerboard(int width, int height){
     return return_string;
 }
 
-std::string cross(int size){
+std::string cross(int size)
+{
     std::string return_string = "";
 
     int index = 0;
@@ -66,11 +69,28 @@ std::string cross(int size){
     return return_string;
 }
 
-std::string l_triangle(int length){
+std::string l_triangle(int length)
+{
     std::string return_string = "";
 
     for(int y = 1; y < length+1;y++){
         for(int x = 0; x < y;x++){
+            return_string += "*";
+        }
+        return_string += "\n";
+    }
+
+    return return_string;
+}
+
+std::string u_triangle(int length)
+{
+    std::string return_string = "";
+
+    for (int y = length; y > 0; y--)
+    {
+        for (int x = 0; x < y; x++)
+        {
             return_string += "*";
         }
         return_string += "\n";
