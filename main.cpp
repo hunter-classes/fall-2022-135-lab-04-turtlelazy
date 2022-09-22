@@ -13,5 +13,11 @@ int main(){
 
     std::cout << box(1, 1);
 
+    std::cout << "Box 7x4:\n";
+
+    std::cout << box(7, 4);
+
+    std::cout << "Checkerboard 11x6:\n";
+    std::cout << checkerboard(11,6);
     return 0;
 }
