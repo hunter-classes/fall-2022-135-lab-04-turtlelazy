@@ -4,3 +4,4 @@ std::string cross(int size);
 std::string l_triangle(int length);
 std::string u_triangle(int length);
 std::string upside_down_trapezoid(int width, int height);
+std::string checkerboard_3x3(int width, int height);

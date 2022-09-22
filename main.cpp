@@ -71,5 +71,20 @@ int main(){
     std::cout << "Upside-down Trap 12x7:\n";
     std::cout << upside_down_trapezoid(12, 7);
 
+    std::cout << "Upside-down Trap 10x5:\n";
+    std::cout << upside_down_trapezoid(10, 5);
+
+    std::cout << "Upside-down Trap 11x6:\n";
+    std::cout << upside_down_trapezoid(11, 6);
+
+    std::cout << "Upside-down Trap 15x1:\n";
+    std::cout << upside_down_trapezoid(15, 1);
+
+    std::cout << "3by3 Checkerboard 16x11:\n";
+    std::cout << checkerboard_3x3(16,11);
+
+    std::cout << "3by3 Checkerboard 27x27:\n";
+    std::cout << checkerboard_3x3(27, 27);
+
     return 0;
 }

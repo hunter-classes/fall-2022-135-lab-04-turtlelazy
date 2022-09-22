@@ -122,3 +122,33 @@ std::string upside_down_trapezoid(int width, int height)
 
     return return_string;
 }
+
+std::string checkerboard_3x3(int width, int height)
+{
+    std::string return_string = "";
+
+    std::string main_char = "*";
+    std::string side_char = " ";
+
+    for(int y = 0; y < height; y++){
+        if( (y/3) % 2 == 1){
+            main_char = " ";
+            side_char = "*";
+        }
+        else{
+            main_char = "*";
+            side_char = " ";
+        }
+        for(int x = 0; x < width; x++){
+            if( (x/3) % 2 == 1){
+                return_string += side_char;
+            }
+            else{
+                return_string += main_char;
+            }
+        }
+        return_string += "\n";
+    }
+
+    return return_string;
+}
