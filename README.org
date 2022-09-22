@@ -1,10 +1,10 @@
 * Fall 2022 - Lab 04
 
-* Last name:
+* Last name: Ishraq
 
-* First name:
+* First name: Mahid
 
-* GitHub username:
+* GitHub username: turtlelazy
 
 * Notes:
 
