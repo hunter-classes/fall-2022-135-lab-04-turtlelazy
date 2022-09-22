@@ -98,3 +98,27 @@ std::string u_triangle(int length)
 
     return return_string;
 }
+
+std::string upside_down_trapezoid(int width, int height)
+{
+    std::string return_string = "";
+    if( 2 * (height - 1) >= width){
+        return "Impossible shape!\n";
+    }
+    
+    for(int y = 0; y < height; y ++){
+
+        //initial spaces
+        for(int i = 0; i < y; i++){
+            return_string += " ";
+        }
+
+        //stars in each line
+        for(int x = 0; x < width- 2 * y; x ++ ){
+            return_string += "*";
+        }
+        return_string += "\n";
+    }
+
+    return return_string;
+}

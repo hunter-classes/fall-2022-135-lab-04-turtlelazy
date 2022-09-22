@@ -58,12 +58,18 @@ int main(){
 
     std::cout << "Upper Triangle 8:\n";
     std::cout << u_triangle(8);
-    
+
     std::cout << "Upper Triangle 2:\n";
     std::cout << u_triangle(2);
 
     std::cout << "Upper Triangle 1:\n";
     std::cout << u_triangle(1);
+
+    std::cout << "Upside-down Trap 12x5:\n";
+    std::cout << upside_down_trapezoid(12,5);
+
+    std::cout << "Upside-down Trap 12x7:\n";
+    std::cout << upside_down_trapezoid(12, 7);
 
     return 0;
 }
