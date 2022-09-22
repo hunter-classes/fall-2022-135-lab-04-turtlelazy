@@ -65,3 +65,16 @@ std::string cross(int size){
     }
     return return_string;
 }
+
+std::string l_triangle(int length){
+    std::string return_string = "";
+
+    for(int y = 1; y < length+1;y++){
+        for(int x = 0; x < y;x++){
+            return_string += "*";
+        }
+        return_string += "\n";
+    }
+
+    return return_string;
+}

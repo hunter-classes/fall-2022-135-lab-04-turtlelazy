@@ -31,5 +31,27 @@ int main(){
 
     std::cout << "Cross 8:\n";
     std::cout << cross(8);
+
+    std::cout << "Cross 10:\n";
+    std::cout << cross(10);
+
+    std::cout << "Cross 1:\n";
+    std::cout << cross(1);
+
+    std::cout << "Cross 2:\n";
+    std::cout << cross(2);
+
+    std::cout << "Lower Triangle 6:\n";
+    std::cout << l_triangle(6);
+
+    std::cout << "Lower Triangle 8:\n";
+    std::cout << l_triangle(8);
+
+    std::cout << "Lower Triangle 2:\n";
+    std::cout << l_triangle(2);
+
+    std::cout << "Lower Triangle 1:\n";
+    std::cout << l_triangle(1);
+
     return 0;
 }
