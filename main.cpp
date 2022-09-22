@@ -86,5 +86,23 @@ int main(){
     std::cout << "3by3 Checkerboard 27x27:\n";
     std::cout << checkerboard_3x3(27, 27);
 
+    std::cout << "3by3 Checkerboard 1x1:\n";
+    std::cout << checkerboard_3x3(1, 1);
+
+    std::cout << "3by3 Checkerboard 3x3:\n";
+    std::cout << checkerboard_3x3(3, 3);
+
+    std::cout << "3by3 Checkerboard 27x3:\n";
+    std::cout << checkerboard_3x3(27, 3);
+
+    std::cout << "3by3 Checkerboard 3x27:\n";
+    std::cout << checkerboard_3x3(3, 27);
+
+    std::cout << "3by3 Checkerboard 27x1:\n";
+    std::cout << checkerboard_3x3(27, 1);
+
+    std::cout << "3by3 Checkerboard 1x27:\n";
+    std::cout << checkerboard_3x3(1, 27);
+
     return 0;
 }
