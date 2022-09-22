@@ -8,7 +8,9 @@ std::string box(int width, int height)
         for(int x = 0; x < width;x++){
             return_string+="*";
         }
-        return_string+="\n";
+        if(y!= height-1){
+            return_string += "\n";
+        }
     }
     return return_string;
 }
@@ -43,7 +45,10 @@ std::string checkerboard(int width, int height)
             //     return_string += char_main;
             // }
         }
-        return_string += "\n";
+        if (y != height - 1)
+        {
+            return_string += "\n";
+        }
     }
     return return_string;
 }
@@ -64,7 +69,10 @@ std::string cross(int size)
             }
         }
         index += 1;
-        return_string += "\n";
+        if (y != size - 1)
+        {
+            return_string += "\n";
+        }
     }
     return return_string;
 }
@@ -77,7 +85,10 @@ std::string l_triangle(int length)
         for(int x = 0; x < y;x++){
             return_string += "*";
         }
-        return_string += "\n";
+        if (y != length)
+        {
+            return_string += "\n";
+        }
     }
 
     return return_string;
@@ -93,7 +104,10 @@ std::string u_triangle(int length)
         {
             return_string += "*";
         }
-        return_string += "\n";
+        if (y != 1)
+        {
+            return_string += "\n";
+        }
     }
 
     return return_string;
@@ -103,7 +117,7 @@ std::string upside_down_trapezoid(int width, int height)
 {
     std::string return_string = "";
     if( 2 * (height - 1) >= width){
-        return "Impossible shape!\n";
+        return "Impossible shape!";
     }
     
     for(int y = 0; y < height; y ++){
@@ -117,7 +131,10 @@ std::string upside_down_trapezoid(int width, int height)
         for(int x = 0; x < width- 2 * y; x ++ ){
             return_string += "*";
         }
-        return_string += "\n";
+        if (y != height - 1)
+        {
+            return_string += "\n";
+        }
     }
 
     return return_string;
@@ -147,7 +164,10 @@ std::string checkerboard_3x3(int width, int height)
                 return_string += main_char;
             }
         }
-        return_string += "\n";
+        if (y != height - 1)
+        {
+            return_string += "\n";
+        }
     }
 
     return return_string;
