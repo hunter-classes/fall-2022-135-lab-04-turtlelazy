@@ -33,7 +33,7 @@ std::string checkerboard(int width, int height){
             else{
                 return_string+=char_main;
             }
-            
+
             // if(x!=width-1){
             //     return_string += char_main + char_side;
             // }
@@ -41,6 +41,26 @@ std::string checkerboard(int width, int height){
             //     return_string += char_main;
             // }
         }
+        return_string += "\n";
+    }
+    return return_string;
+}
+
+std::string cross(int size){
+    std::string return_string = "";
+
+    int index = 0;
+
+    for(int y = 0; y < size; y++){
+        for(int x = 0; x < size; x++){
+            if(x == index || x == size - 1 - index){
+                return_string += "*";
+            }
+            else{
+                return_string += " ";
+            }
+        }
+        index += 1;
         return_string += "\n";
     }
     return return_string;
